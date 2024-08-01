@@ -20,7 +20,7 @@ For the current folder structure
             - fragment.glsl
             - vertex.glsl
         - my-func.glsl
-        - glsl-noise
+        - **glsl-noise**
 
 ```javascript
 const { src, dest } = require('gulp');
