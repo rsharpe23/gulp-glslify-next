@@ -14,11 +14,12 @@ npm install --save-dev https://github.com/rsharpe23/gulp-glslify-next.git
 
 For the current folder structure
 
-- **shaders**
-    - **@default**
-        - fragment.glsl
-        - vertex.glsl
-    - my-func.glsl
+- **my-project**
+    - **shaders**
+        - **@default**
+            - fragment.glsl
+            - vertex.glsl
+        - my-func.glsl
 
 ```javascript
 const { src, dest } = require('gulp');
