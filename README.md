@@ -14,8 +14,8 @@ npm install --save-dev https://github.com/rsharpe23/gulp-glslify-next.git
 
 For the current folder structure
 
-- shaders
-    - @default
+- **shaders**
+    - **@default**
         - fragment.glsl
         - vertex.glsl
     - my-func.glsl
