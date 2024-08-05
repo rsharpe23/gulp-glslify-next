@@ -20,7 +20,7 @@ For the current folder structure
             - fragment.glsl
             - vertex.glsl
         - my-func.glsl
-        - **glsl-noise**
+        - **some-lib**
 
 ```javascript
 const { src, dest } = require('gulp');
@@ -28,7 +28,7 @@ const glslify = require('gulp-glslify-next');
 const rename = require('gulp-rename');
 
 exports.default = () => {
-  return src('./shaders/@*/*.glsl')
+  return src(['./shaders/@*/*.glsl', '!**/*.build.glsl'])
     .pipe(glslify({ basedir: './shaders' }))
     .pipe(rename({ extname: '.build.glsl' }))
     .pipe(dest('./shaders'));
